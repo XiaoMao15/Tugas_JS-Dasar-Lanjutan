@@ -1,0 +1,69 @@
+.card-list {
+  position: relative;
+}
+
+/* Judul section */
+.card-list h2 {
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.card-list > .text-center p {
+  max-width: 650px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Card */
+.card-list__card {
+  border: none !important;
+  border-radius: 16px !important;
+  overflow: hidden;
+  background: #ffffff;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+/* Efek ketika cursor diarahkan ke card */
+.card-list__card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.14);
+}
+
+/* Gambar */
+.card-list__card .card-img-top {
+  height: 200px;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+}
+
+/* Zoom gambar ketika hover */
+.card-list__card:hover .card-img-top {
+  transform: scale(1.05);
+}
+
+/* Body card */
+.card-list__card .card-body {
+  padding: 22px;
+}
+
+/* Judul card */
+.card-list__card .card-title {
+  font-weight: 700;
+  margin-bottom: 10px;
+  transition: color 0.25s ease;
+}
+
+/* Judul berubah warna ketika card di-hover */
+.card-list__card:hover .card-title {
+  color: #0d6efd;
+}
+
+/* Deskripsi */
+.card-list__card .card-text {
+  color: #6c757d;
+  line-height: 1.6;
+  margin-bottom: 0;
+}
