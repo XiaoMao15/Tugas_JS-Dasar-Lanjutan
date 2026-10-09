@@ -1,16 +1,22 @@
-# React + Vite
+# Tugas 2 — Pagebound Book Sales
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Fitur
+- Menampilkan katalog novel dengan tema Pagebound.
+- Menggunakan React Router untuk navigasi antarhalaman.
+- Menyediakan halaman Home, Book, Team, dan Contact.
+- Menyediakan halaman Login dan Register.
+- Menggunakan React Bootstrap untuk komponen antarmuka.
+- Menggunakan CSS untuk mengatur tampilan website.
 
-Currently, two official plugins are available:
+## Struktur File Utama
+- `src/App.jsx` — konfigurasi halaman dan routing.
+- `src/Elements/navbar.jsx` — navigasi website.
+- `src/Elements/cardlist.jsx` — komponen kartu novel.
+- `src/Elements/footer.jsx` — footer website.
+- `src/pages/Home.jsx` — halaman Home.
+- `src/pages/Book.jsx` — halaman katalog novel.
+- `src/pages/Login.jsx` — halaman Login.
+- `src/pages/Register.jsx` — halaman Register.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
-
-## React Compiler
-
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Pengembangan
+Project ini dikembangkan dengan tema toko novel Pagebound, menggunakan React Router untuk navigasi dan React Bootstrap untuk membangun antarmuka.
