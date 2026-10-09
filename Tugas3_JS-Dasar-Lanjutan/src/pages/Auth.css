@@ -1,0 +1,9 @@
+.auth-page { display: flex; align-items: center; justify-content: center; min-height: 70vh; padding: 48px 16px; background: #fff; }
+.auth-card { width: 100%; max-width: 470px; padding: 34px; border: 1px solid #e4e4e4; border-radius: 16px; background: #fff; box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1); }
+.auth-card h1 { margin-bottom: 24px; text-align: center; font-size: 1.8rem; font-weight: 700; }
+.auth-card .form-control { min-height: 48px; margin-bottom: 14px; border-radius: 8px; }
+.auth-submit { width: 100%; min-height: 44px; border-radius: 8px; }
+.auth-divider { display: flex; align-items: center; gap: 12px; margin: 24px 0 18px; color: #6c757d; font-size: 0.9rem; }
+.auth-divider::before, .auth-divider::after { flex: 1; height: 1px; background: #dee2e6; content: ""; }
+.auth-social { width: 100%; margin-bottom: 8px; border-radius: 8px; }
+.auth-switch { margin: 18px 0 0; text-align: center; color: #6c757d; }

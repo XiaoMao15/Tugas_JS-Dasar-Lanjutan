@@ -1,0 +1,19 @@
+body {
+  margin: 0;
+  background-color: #f8f9fa;
+  color: #212529;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#root {
+  min-height: 100vh;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+button,
+a {
+  transition: all 0.25s ease;
+}

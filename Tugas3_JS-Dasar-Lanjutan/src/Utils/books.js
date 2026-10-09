@@ -1,84 +1,85 @@
-import Card from "react-bootstrap/Card";
-import Col from "react-bootstrap/Col";
-import Container from "react-bootstrap/Container";
-import Row from "react-bootstrap/Row";
-import Button from "react-bootstrap/Button";
-import "./cardlist.css";
-
 const books = [
   {
+    id: 1,
     title: "Omniscient Reader's Viewpoint",
     author: "Sing Shong",
+    year: 2020,
     description: "Kim Dokja menjadi satu-satunya pembaca yang tahu bagaimana dunia novel favoritnya akan berakhir.",
     price: "Rp129.000",
     image: "https://orv.pages.dev/assets/covers/orv.webp",
   },
   {
+    id: 2,
     title: "Shadow Slave",
     author: "Guiltythree",
+    year: 2022,
     description: "Sunny terlempar ke dunia berbahaya penuh Nightmare, misteri, dan kekuatan yang harus ia kuasai.",
     price: "Rp119.000",
     image: "https://d28hgpri8am2if.cloudfront.net/book_images/onix/cvr9781638494195/shadow-slave-book-1-9781638494195_lg.jpg",
   },
   {
+    id: 3,
     title: "Lord of the Mysteries",
     author: "Cuttlefish That Loves Diving",
+    year: 2018,
     description: "Klein Moretti terseret ke dunia era Victoria yang dipenuhi ramuan, organisasi rahasia, dan misteri supernatural.",
     price: "Rp139.000",
     image: "https://upload.wikimedia.org/wikipedia/en/1/18/Lord_of_Mysteries%2C_Volume_1%2C_print_cover.jpg?utm_source=en.wikipedia.org&utm_campaign=index&utm_content=original",
   },
   {
+    id: 4,
     title: "The Lord of the Rings",
     author: "J. R. R. Tolkien",
+    year: 1954,
     description: "Perjalanan berbahaya untuk menghancurkan One Ring dan menghentikan kegelapan yang mengancam Middle-earth.",
     price: "Rp159.000",
     image: "https://m.media-amazon.com/images/I/7125+5E40JL._AC_UF1000,1000_QL80_.jpg",
   },
   {
+    id: 5,
     title: "The Hobbit",
     author: "J. R. R. Tolkien",
+    year: 1937,
     description: "Bilbo Baggins meninggalkan kehidupan tenangnya untuk ikut dalam petualangan menuju Lonely Mountain.",
     price: "Rp99.000",
     image: "https://m.media-amazon.com/images/I/712cDO7d73L._AC_UF1000,1000_QL80_.jpg",
   },
   {
+    id: 6,
     title: "The Beginning After the End",
     author: "TurtleMe",
+    year: 2017,
     description: "Seorang raja terlahir kembali di dunia sihir dan mendapat kesempatan menjalani hidup yang berbeda.",
     price: "Rp109.000",
     image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSoqC1g9EWhTxVEPvsr9kaaadp1XYTktM30bYo27iwcwc4MIg0mMt0t6pUg&s=10",
   },
+  {
+    id: 7,
+    title: "Mother of Learning",
+    author: "Domagoj Kurmaic",
+    year: 2011,
+    description: "Zorian terjebak dalam putaran waktu dan berusaha mengungkap rahasia di baliknya.",
+    price: "Rp119.000",
+    image: "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1637439779i/59661342.jpg",
+  },
+  {
+    id: 8,
+    title: "The Name of the Wind",
+    author: "Patrick Rothfuss",
+    year: 2007,
+    description: "Kisah Kvothe, seorang musisi dan penyihir yang menyimpan masa lalu misterius.",
+    price: "Rp129.000",
+    image: "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1659900513i/2495567.jpg",
+  },
+  {
+    id: 9,
+    title: "A Song of Ice and Fire",
+    author: "George R. R. Martin",
+    year: 1996,
+    description: "Perebutan kekuasaan, konflik keluarga, dan ancaman di dunia Westeros.",
+    price: "Rp159.000",
+    image: "https://upload.wikimedia.org/wikipedia/en/d/dc/A_Song_of_Ice_and_Fire_book_collection_box_set_cover.jpg?utm_source=en.wikipedia.org&utm_campaign=index&utm_content=originallangs",
+  },
 ];
 
-function Cardgrid() {
-  return (
-    <Container id="book" className="card-list py-5">
-      <div className="text-center mb-4">
-        <h2>Novel Pilihan</h2>
-        <p className="text-muted">
-          Jelajahi dunia fantasi, misteri, dan petualangan dari novel-novel pilihan pembaca.
-        </p>
-      </div>
-      <Row xs={1} sm={2} lg={3} className="g-4">
-        {books.map((book) => (
-          <Col key={book.title}>
-            <Card className="card-list__card h-100">
-              <Card.Img variant="top" src={book.image} alt={`Ilustrasi buku ${book.title}`} />
-              <Card.Body className="d-flex flex-column">
-                <Card.Title>{book.title}</Card.Title>
-                <Card.Subtitle className="mb-2 text-muted">{book.author}</Card.Subtitle>
-                <Card.Text>{book.description}</Card.Text>
-                <div className="mt-auto pt-3 d-flex align-items-center justify-content-between gap-2">
-                  <strong className="book-price">{book.price}</strong>
-                  <Button href="/login" size="sm" variant="primary">Buy Now</Button>
-                </div>
-              </Card.Body>
-            </Card>
-          </Col>
-        ))}
-      </Row>
-    </Container>
-  );
-}
-
-export default Cardgrid;
+export default books;
