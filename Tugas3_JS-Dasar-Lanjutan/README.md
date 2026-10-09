@@ -1,16 +1,20 @@
-# React + Vite
+# Tugas 3 — Pagebound Book Sales
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Fitur
+- Menampilkan katalog novel pada halaman Home dan Book.
+- Menyimpan data awal novel di file `books.js`.
+- Menggunakan `.map()` untuk menampilkan data novel dalam bentuk kartu.
+- Menambahkan novel baru melalui form.
+- Menggunakan React Hooks `useState` untuk mengelola state.
+- Menggunakan `localStorage` untuk menyimpan novel tambahan di browser.
+- Menampilkan informasi judul, penulis, tahun terbit, deskripsi, gambar, dan harga novel.
 
-Currently, two official plugins are available:
+## Struktur File Utama
+- `src/Utils/books.js` — data awal novel.
+- `src/Elements/cardlist.jsx` — komponen katalog dan form tambah novel.
+- `src/Elements/cardlist.css` — styling kartu novel.
+- `src/pages/Home.jsx` — halaman Home.
+- `src/pages/Book.jsx` — halaman Book.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
-
-## React Compiler
-
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Pengembangan
+Project ini merupakan pengembangan dari katalog novel Pagebound dengan penambahan pengelolaan data menggunakan React Hooks.
